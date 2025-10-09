@@ -182,6 +182,16 @@ export default function App() {
                 )}
               </button>
               <a
+                href="mailto:darshanhingu03@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`p-2 rounded-lg transition-colors ${
+                  isDarkMode ? "hover:bg-slate-800" : "hover:bg-gray-200"
+                }`}
+              >
+                <Mail className="w-5 h-5" />
+              </a>
+              <a
                 href="https://github.com/darshanhingu03"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -200,16 +210,6 @@ export default function App() {
                 }`}
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://twitter.com/darshanhingu03"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`p-2 rounded-lg transition-colors ${
-                  isDarkMode ? "hover:bg-slate-800" : "hover:bg-gray-200"
-                }`}
-              >
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>
