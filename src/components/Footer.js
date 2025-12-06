@@ -6,7 +6,7 @@ const Footer = ({ isDarkMode }) => {
             className={`relative z-10 border-t ${isDarkMode ? "border-slate-800" : "border-gray-200"
                 } mt-12`}
         >
-            <div className="max-w-7xl mx-auto px-6 py-8">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     <p
                         className={`text-sm ${isDarkMode ? "text-gray-500" : "text-gray-600"

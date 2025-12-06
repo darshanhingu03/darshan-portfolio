@@ -87,7 +87,7 @@ export default function App() {
         roundedExperience={roundedExperience}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 py-4 md:px-6 md:py-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           <Sidebar
             isDarkMode={isDarkMode}

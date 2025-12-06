@@ -6,12 +6,12 @@ const Skills = ({ isDarkMode }) => {
     return (
         <div
             className={`${isDarkMode
-                    ? "bg-slate-900/50 border-slate-800"
-                    : "bg-white/70 border-gray-200"
-                } backdrop-blur-xl rounded-2xl border p-8`}
+                ? "bg-slate-900/50 border-slate-800"
+                : "bg-white/70 border-gray-200"
+                } backdrop-blur-xl rounded-2xl border p-4 sm:p-8`}
         >
-            <h2 className="text-3xl font-bold mb-8 flex items-center">
-                <Cpu className="w-8 h-8 mr-3 text-purple-400" />
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 flex items-center">
+                <Cpu className="w-6 h-6 sm:w-8 sm:h-8 mr-3 text-purple-400" />
                 Technical Skills
             </h2>
             <div className="space-y-6">
@@ -25,8 +25,8 @@ const Skills = ({ isDarkMode }) => {
                             <span
                                 key={skill}
                                 className={`px-4 py-2 ${isDarkMode
-                                        ? "bg-blue-500/10 border-blue-500/30 text-blue-300"
-                                        : "bg-blue-50 border-blue-300 text-blue-700"
+                                    ? "bg-blue-500/10 border-blue-500/30 text-blue-300"
+                                    : "bg-blue-50 border-blue-300 text-blue-700"
                                     } border rounded-lg text-sm font-mono`}
                             >
                                 {skill}
@@ -44,8 +44,8 @@ const Skills = ({ isDarkMode }) => {
                             <span
                                 key={skill}
                                 className={`px-4 py-2 ${isDarkMode
-                                        ? "bg-purple-500/10 border-purple-500/30 text-purple-300"
-                                        : "bg-purple-50 border-purple-300 text-purple-700"
+                                    ? "bg-purple-500/10 border-purple-500/30 text-purple-300"
+                                    : "bg-purple-50 border-purple-300 text-purple-700"
                                     } border rounded-lg text-sm font-mono`}
                             >
                                 {skill}
@@ -63,8 +63,8 @@ const Skills = ({ isDarkMode }) => {
                             <span
                                 key={skill}
                                 className={`px-4 py-2 ${isDarkMode
-                                        ? "bg-green-500/10 border-green-500/30 text-green-300"
-                                        : "bg-green-50 border-green-300 text-green-700"
+                                    ? "bg-green-500/10 border-green-500/30 text-green-300"
+                                    : "bg-green-50 border-green-300 text-green-700"
                                     } border rounded-lg text-sm font-mono`}
                             >
                                 {skill}
@@ -82,8 +82,8 @@ const Skills = ({ isDarkMode }) => {
                             <span
                                 key={skill}
                                 className={`px-4 py-2 ${isDarkMode
-                                        ? "bg-yellow-500/10 border-yellow-500/30 text-yellow-300"
-                                        : "bg-yellow-50 border-yellow-300 text-yellow-700"
+                                    ? "bg-yellow-500/10 border-yellow-500/30 text-yellow-300"
+                                    : "bg-yellow-50 border-yellow-300 text-yellow-700"
                                     } border rounded-lg text-sm font-mono`}
                             >
                                 {skill}
