@@ -23,8 +23,8 @@ export default function App() {
   const msInYear = 1000 * 60 * 60 * 24 * 365.25;
   const totalExperience = diffInMs / msInYear;
 
-  // Round to 1 decimal place
-  const roundedExperience = parseFloat(totalExperience.toFixed(1));
+  // Round to nearest integer and add +
+  const roundedExperience = Math.round(totalExperience) + "+";
   const fullText =
     "$ npm install darshan-hingu\n> Building scalable backend systems...\n> ✓ Ready to deploy amazing solutions";
 
