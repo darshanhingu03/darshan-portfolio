@@ -1,8 +1,23 @@
 export const experience = [
     {
+        role: "Senior Backend Developer",
+        company: "WATTENCY GREEN PRIVATE LIMITED",
+        period: "Dec 2025 - Present",
+        achievements: [
+            "Designing and developing scalable backend services using Node.js, Express.js, and PostgreSQL",
+            "Building secure, production-ready REST APIs with JWT authentication, role-based access control, and validations",
+            "Implementing microservices architecture with API Gateway, Auth Service, and User Service",
+            "Integrating Redis for caching and real-time data handling to improve performance",
+            "Working with event-driven architecture using Kafka for inter-service communication",
+            "Managing database design, query optimization, and migrations",
+            "Collaborating with frontend, DevOps, and product teams to deliver business-ready solutions",
+            "Ensuring code quality with best practices, logging, and error handling",
+        ],
+    },
+    {
         role: "Backend Developer",
         company: "Procurement Genie Pvt Ltd",
-        period: "Nov 2023 - Present",
+        period: "Nov 2023 - Dec 2025",
         type: "Product-Based Company",
         achievements: [
             "Led development of microservices-based SaaS supply chain project",
