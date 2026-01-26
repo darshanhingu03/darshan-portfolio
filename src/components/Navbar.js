@@ -1,12 +1,10 @@
 import React from "react";
 import {
-    Server,
     Moon,
     Sun,
     Mail,
     Github,
     Linkedin,
-    FileText,
     Eye,
     Download,
     ChevronRight,

@@ -11,7 +11,7 @@ import Contact from "./components/sections/Contact";
 export default function App() {
   const [activeEndpoint, setActiveEndpoint] = useState("about");
   const [terminalText, setTerminalText] = useState("");
-  const [isTyping, setIsTyping] = useState(true);
+  const [isTyping] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const startDate = new Date("2023-02-01");
   const currentDate = new Date();

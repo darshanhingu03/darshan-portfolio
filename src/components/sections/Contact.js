@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Server, FileText, Github, Linkedin } from "lucide-react";
+import { Mail, Server, Github, Linkedin } from "lucide-react";
 
 const Contact = ({ isDarkMode }) => {
     return (
