@@ -29,6 +29,16 @@ export default function App() {
     "$ npm install darshan-hingu\n> Building scalable backend systems...\n> ✓ Ready to deploy amazing solutions";
 
   useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+    } else {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkMode]);
+
+  useEffect(() => {
     if (isTyping && terminalText.length < fullText.length) {
       const timeout = setTimeout(() => {
         setTerminalText(fullText.slice(0, terminalText.length + 1));
@@ -68,18 +78,24 @@ export default function App() {
 
   return (
     <div
-      className={`min-h-screen font-sans transition-colors duration-300 ${isDarkMode ? "bg-slate-950 text-white" : "bg-gray-50 text-gray-900"
-        }`}
+      className={`min-h-screen font-sans transition-colors duration-200 ${
+        isDarkMode
+          ? "bg-[#0B0F19] text-[#F8FAFC]"
+          : "bg-[#F8FAFC] text-[#0F172A]"
+      }`}
     >
       <div
-        className={`fixed inset-0 z-0 ${isDarkMode ? "opacity-20" : "opacity-5"
-          }`}
+        className={`fixed inset-0 z-0 pointer-events-none ${
+          isDarkMode ? "opacity-15" : "opacity-4"
+        }`}
         style={{
-          backgroundImage: `radial-gradient(${isDarkMode ? "#4f46e5" : "#000"
-            } 1px, transparent 1px)`,
-          backgroundSize: "30px 30px",
+          backgroundImage: `radial-gradient(${
+            isDarkMode ? "#6366F1" : "#000"
+          } 1px, transparent 1px)`,
+          backgroundSize: "28px 28px",
         }}
       ></div>
+
 
       <Navbar
         isDarkMode={isDarkMode}

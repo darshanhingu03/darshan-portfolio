@@ -1,8 +1,21 @@
 export const experience = [
     {
+        role: "Full-Stack Developer (Freelance)",
+        company: "Vexlocode",
+        period: "March 2026 - Present",
+        type: "Freelance",
+        achievements: [
+            "Developed end-to-end web applications using Next.js, React.js, Node.js, Express.js, and PostgreSQL",
+            "Designed and implemented responsive frontend interfaces with modern UI/UX practices",
+            "Developed real-time features using Socket.IO and Redis",
+            "Collaborated with clients to gather requirements, design solutions, and deliver production-ready applications",
+            "Managed deployments, database migrations, and application maintenance",
+        ],
+    },
+    {
         role: "Senior Backend Developer",
         company: "WATTENCY GREEN PRIVATE LIMITED",
-        period: "Dec 2025 - Present",
+        period: "Dec 2025 - March 2026",
         achievements: [
             "Designing and developing scalable backend services using Node.js, Express.js, and PostgreSQL",
             "Building secure, production-ready REST APIs with JWT authentication, role-based access control, and validations",

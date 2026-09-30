@@ -5,6 +5,7 @@ import {
     Mail,
     Github,
     Linkedin,
+    Globe,
     Eye,
     Download,
     ChevronRight,
@@ -54,7 +55,17 @@ const Navbar = ({ isDarkMode, setIsDarkMode, roundedExperience }) => {
                             )}
                         </button>
                         <a
-                            href="mailto:darshanhingu03@gmail.com"
+                            href="https://www.vexlocode.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Vexlocode Website"
+                            className={`p-2 rounded-lg transition-colors ${isDarkMode ? "hover:bg-slate-800" : "hover:bg-gray-200"
+                                }`}
+                        >
+                            <Globe className="w-5 h-5" />
+                        </a>
+                        <a
+                            href="mailto:dev.darshanhingu@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={`p-2 rounded-lg transition-colors ${isDarkMode ? "hover:bg-slate-800" : "hover:bg-gray-200"
@@ -163,6 +174,16 @@ const Navbar = ({ isDarkMode, setIsDarkMode, roundedExperience }) => {
                 <div className={`md:hidden px-6 pt-2 pb-6 border-t ${isDarkMode ? "border-slate-800" : "border-gray-200"}`}>
                     <div className="flex flex-col space-y-4 mt-4">
                         <div className="flex items-center justify-around">
+                            <a
+                                href="https://www.vexlocode.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Vexlocode Website"
+                                className={`p-3 rounded-lg flex items-center justify-center ${isDarkMode ? "bg-slate-800 text-white" : "bg-gray-100 text-black"
+                                    }`}
+                            >
+                                <Globe className="w-5 h-5" />
+                            </a>
                             <a
                                 href="mailto:darshanhingu03@gmail.com"
                                 className={`p-3 rounded-lg flex items-center justify-center ${isDarkMode ? "bg-slate-800 text-white" : "bg-gray-100 text-black"

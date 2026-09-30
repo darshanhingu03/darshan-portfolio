@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Server, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, Server, Github, Linkedin } from "lucide-react";
 
 const Contact = ({ isDarkMode }) => {
     return (
@@ -23,14 +23,24 @@ const Contact = ({ isDarkMode }) => {
                     <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
                     <div className="space-y-3">
                         <a
-                            href="mailto:darshanhingu03@gmail.com"
+                            href="mailto:dev.darshanhingu@gmail.com"
                             className={`flex items-center space-x-3 ${isDarkMode
                                 ? "text-gray-300 hover:text-blue-400"
                                 : "text-gray-700 hover:text-blue-600"
                                 } transition-colors break-all`}
                         >
                             <Mail className="w-5 h-5 flex-shrink-0" />
-                            <span>darshanhingu03@gmail.com</span>
+                            <span>dev.darshanhingu@gmail.com</span>
+                        </a>
+                        <a
+                            href="tel:+917016237323"
+                            className={`flex items-center space-x-3 ${isDarkMode
+                                ? "text-gray-300 hover:text-blue-400"
+                                : "text-gray-700 hover:text-blue-600"
+                                } transition-colors`}
+                        >
+                            <Phone className="w-5 h-5 flex-shrink-0" />
+                            <span>+91 7016237323</span>
                         </a>
                         <div
                             className={`flex items-center space-x-3 ${isDarkMode ? "text-gray-300" : "text-gray-700"

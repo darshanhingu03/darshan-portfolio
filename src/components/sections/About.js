@@ -5,31 +5,34 @@ const About = ({ isDarkMode, terminalText, roundedExperience }) => {
     return (
         <>
             <div
-                className={`${isDarkMode
-                        ? "bg-slate-900/50 border-slate-800/50"
-                        : "bg-gray-800 border-gray-700"
-                    } backdrop-blur-2xl rounded-2xl border p-6 sm:p-8 overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-500`}
+                className={`${
+                    isDarkMode
+                        ? "bg-[#1E293B]/80 border-slate-700/80 shadow-slate-950/50"
+                        : "bg-slate-900 border-slate-800 shadow-slate-900/10 text-slate-100"
+                } backdrop-blur-2xl rounded-2xl border p-6 sm:p-8 overflow-hidden shadow-xl transition-all duration-300`}
             >
                 <div className="flex items-center space-x-2 mb-4">
-                    <div className="w-3 h-3 bg-red-500 rounded-full hover:scale-110 transition-transform cursor-pointer"></div>
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full hover:scale-110 transition-transform cursor-pointer"></div>
-                    <div className="w-3 h-3 bg-green-500 rounded-full hover:scale-110 transition-transform cursor-pointer"></div>
-                    <span className="ml-2 text-xs text-gray-500 font-mono">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-amber-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
+                    <span className="ml-2 text-xs text-slate-400 font-mono">
                         darshan@terminal:~
                     </span>
                 </div>
-                <pre className="text-green-400 font-mono text-sm whitespace-pre-wrap">
+                <pre className="text-emerald-400 font-mono text-sm whitespace-pre-wrap leading-relaxed">
                     {terminalText}
-                    <span className="animate-pulse">_</span>
+                    <span className="animate-pulse text-indigo-400">_</span>
                 </pre>
             </div>
 
             <div
-                className={`${isDarkMode
-                        ? "bg-slate-900/50 border-slate-800"
-                        : "bg-white/70 border-gray-200"
-                    } backdrop-blur-xl rounded-2xl border p-8`}
+                className={`${
+                    isDarkMode
+                        ? "bg-[#1E293B]/60 border-slate-800"
+                        : "bg-white border-slate-200 shadow-sm"
+                } backdrop-blur-xl rounded-2xl border p-8`}
             >
+
                 <div className="flex items-center space-x-2 mb-6">
                     <div className="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></div>
                     <h2 className="text-3xl font-bold">Backend Developer</h2>
